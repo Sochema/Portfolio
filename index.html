@@ -1,54 +1,146 @@
 <!doctype html>
-<html class="no-js" lang="FR">
+<html class="no-js" lang="">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TITRE</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Portfolio ROBACHE Aaron</title>
-
-  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="icon" href="favicon.ico" />
+  <!-- Fontawesome Link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <!-- Place favicon.ico in the root directory -->
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="js/vendor/jquery-1.12.0.min.js"></script>
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
   <header>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand disable" href="#">Portfolio</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">présentation</a>
-          <a class="nav-item nav-link" href="#">Mes projets</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
-        </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="#me">Me and myself</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="home">
+      <div class="name">
+        <h1>Sonia </br> Chemaa</h1>
       </div>
-    </nav>
+      <div class="description">
+        <p> Apprentice web-developper and journalist </p>
+      </div>
+    </div>
   </header>
 
 
-  <!-- Vendor -->
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <div id="me">
+    <div id="titleMe">
+      <h2>Me and myself</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6" id="lips">
+          <figure>
+            <img src="img/lips.png" alt="pop art lips">
+          </figure>
+        </div>
+
+        <div class="col-md-6" id="bubble">
+          <figure>
+            <img src="img/bubble.png" alt="pop art bubble">
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="projects" class="sectionProjects">
+
+    <div id="titleProject">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="projects d-flex">
+      <div class="project" id="one">
+
+      </div>
+      <div class="project" id="two">
+
+      </div>
+      <div class="project" id="three">
+
+      </div>
+      <div class="project" id="four">
+
+      </div>
+    </div>
+
+    <footer id="contact">
+      <div id="titleContact" class="">
+        <h2>Contact</h2>
+      </div>
+      <div class="socialnetwork">
+        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+  </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    $(".project").mouseenter(function() {
+      $(this).css("min-width", "40%");
+    });
+    $(".project").mouseleave(function() {
+      $(this).css("min-width", "20%");
+
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
   </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <!-- Initialize Bootstrap functionality -->
+  <script>
+    // Initialize tooltip component
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function() {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -67,13 +159,7 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
-
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
